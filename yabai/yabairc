@@ -1,0 +1,20 @@
+# setup
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+sudo yabai --load-sa
+
+yabai -m config layout bsp
+
+# hides menu bar
+yabai -m config menubar_opacity 0.0
+
+# sick padding
+yabai -m config top_padding    30
+yabai -m config bottom_padding 10
+yabai -m config left_padding   15
+yabai -m config right_padding  15
+yabai -m config window_gap     15
+yabai -m config external_bar main:30:0
+
+# focus follows mouse
+yabai -m config focus_follows_mouse autoraise
