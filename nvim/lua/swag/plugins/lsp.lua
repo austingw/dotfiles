@@ -210,7 +210,7 @@ return {
       formatters_by_ft = {
         css = { 'prettierd' },
         fish = { 'fish_indent' },
-        go = { 'gofmt' },
+        go = { 'gofumpt' },
         html = { 'prettierd' },
         java = { 'google-java-format' },
         javascript = { 'prettierd' },
