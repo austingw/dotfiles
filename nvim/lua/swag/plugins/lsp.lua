@@ -218,6 +218,7 @@ return {
         lua = { 'stylua' },
         sh = { 'shfmt' },
         typescript = { 'prettierd' },
+        typescriptreact = { 'prettierd' },
       },
       formatters = {
         injected = { options = { ignore_errors = true } },
