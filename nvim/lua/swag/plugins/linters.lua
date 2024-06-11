@@ -6,20 +6,20 @@ return {
       fish = { 'fish' },
       java = { 'checkstyle' },
       go = { 'golangci_lint' },
-      lua = { 'luacheck' },
+      lua = { 'selene' },
       markdown = { 'vale' },
       python = { 'pylint' },
       javascript = {
-        'eslint_d',
+        'eslint',
       },
       typescript = {
-        'eslint_d',
+        'eslint',
       },
       javascriptreact = {
-        'eslint_d',
+        'eslint',
       },
       typescriptreact = {
-        'eslint_d',
+        'eslint',
       },
     }
     --Run linter on save or when leaving insert mode
