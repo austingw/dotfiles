@@ -15,10 +15,10 @@ require('lazy').setup({
   require 'swag/plugins/colorthemes',
   require 'swag/plugins/editor',
   require 'swag/plugins/git',
---  require 'swag/plugins/linters',
+  require 'swag/plugins/linters',
   require 'swag/plugins/lsp',
+  require 'swag/plugins/mini',
   require 'swag/plugins/ui',
-  require 'swag/plugins/utils',
 }, {
   ui = {
     -- If you have a Nerd Font, set icons to an empty table which will use the
