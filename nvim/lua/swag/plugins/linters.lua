@@ -1,11 +1,11 @@
 return {
   'mfussenegger/nvim-lint',
+  event = { 'BufReadPre', 'BufNewFile' },
   config = function()
-    require('lint').linters_by_ft = {
-      css = { 'stylelint' },
+    local lint = require 'lint'
+    lint.linters_by_ft = {
       fish = { 'fish' },
       java = { 'checkstyle' },
-      go = { 'golangci_lint' },
       lua = { 'selene' },
       markdown = { 'vale' },
       python = { 'pylint' },
@@ -25,7 +25,7 @@ return {
     --Run linter on save or when leaving insert mode
     vim.api.nvim_create_autocmd({ 'InsertLeave', 'BufWritePost' }, {
       callback = function()
-        local lint_status, lint = pcall(require, 'lint')
+        local lint_status = pcall(require, 'lint')
         if lint_status then
           lint.try_lint()
         end
