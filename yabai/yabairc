@@ -6,7 +6,7 @@ sudo yabai --load-sa
 yabai -m config layout bsp
 
 # hides menu bar
-yabai -m config menubar_opacity 0.0
+yabai -m config menubar_opacity 1.0
 
 # sick padding
 yabai -m config top_padding    30
