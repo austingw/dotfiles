@@ -9,6 +9,11 @@ function code
     open -n -b "com.microsoft.VSCode" --args $location
 end
 
+if set -q ZELLIJ
+else
+    zellij
+end
+
 zoxide init fish | source
 
 starship init fish | source
@@ -26,4 +31,3 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
-
