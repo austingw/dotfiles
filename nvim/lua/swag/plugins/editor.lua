@@ -26,6 +26,12 @@ return {
     end,
   },
   { 'numToStr/Comment.nvim', opts = {} },
+  {
+    'brenoprata10/nvim-highlight-colors',
+    opts = {
+      render = 'foreground',
+    },
+  },
   { -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
