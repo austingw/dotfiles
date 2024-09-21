@@ -98,3 +98,6 @@ color = "#f4a261"
 [[colors.indexed_colors]]
 index = 17
 color = "#d67ad2"
+
+[keyboard]
+bindings = [{ key = "Enter", mods = "Alt", action = "ReceiveChar" }]
