@@ -135,6 +135,7 @@ return {
         gopls = {},
         pyright = {},
         rust_analyzer = {},
+        svelte = {},
         tsserver = {},
         tailwindcss = {},
         lua_ls = {
@@ -217,6 +218,7 @@ return {
         json = { 'prettierd' },
         lua = { 'stylua' },
         sh = { 'shfmt' },
+        svelte = { 'prettierd' },
         typescript = { 'prettierd' },
         typescriptreact = { 'prettierd' },
       },
