@@ -217,10 +217,9 @@ return {
         javascript = { 'prettierd' },
         json = { 'prettierd' },
         lua = { 'stylua' },
-        sh = { 'shfmt' },
-        svelte = { 'prettierd' },
-        typescript = { 'prettierd' },
-        typescriptreact = { 'prettierd' },
+        svelte = { 'prettier' },
+        typescript = { 'prettier' },
+        typescriptreact = { 'prettier' },
       },
       formatters = {
         injected = { options = { ignore_errors = true } },
