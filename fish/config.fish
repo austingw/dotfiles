@@ -31,3 +31,6 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+set -x GOPATH (go env GOPATH)
+set -x PATH $PATH /usr/local/go/bin (go env GOPATH)/bin
